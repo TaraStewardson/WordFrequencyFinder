@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency Finder</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+<body>
+    <div class="container">
+        <label for="textInput">Enter text: </label>
+        <br>
+        <textarea id="textInput" placeholder="Enter text here... " maxlength="2048"></textarea>
+        <br>
+        <button onclick="calculateWordFrequency()">Calculate</button>
+        <br>
+        <br>
+        <label for="frequencyTable">Frequency table: </label>
+        <br>
+        <table id="frequencyTable">
+            <thead>
+                <tr>
+                    <td><strong>Word</strong></td>
+                    <td><strong>Occurrences</strong></td></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br>
+    </div>
+    <script src="src/main.js"></script>
+</body> 
+</html>
